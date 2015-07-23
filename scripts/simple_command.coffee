@@ -9,13 +9,6 @@
 #   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
 
 module.exports = (robot) ->
-	robot.hear /喋って/i, (msg) ->
-		msg.send msg.random [
-			"こんにちは",
-			"なんでしょうか",
-			"進捗は?"
-		]
-	
-	robot.hear /@extension-bot/ , (msg) ->
-		msg.send "#{msg.message.text} じゃねんじゃ 進捗だせ"
+	robot.hear /chat (.*)/i, (msg) ->
+		msg.send "#{msg.match[1]} じゃねんじゃ 進捗だせ"
 		
