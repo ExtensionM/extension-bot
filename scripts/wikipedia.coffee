@@ -39,7 +39,7 @@ wikiMe = (robot, query, cb) ->
         return cb res.headers.location
 
       if /does not have an article/.test body
-        return cb "Wikipedia has no idea what you're talking about."
+        return cb "見つからなかったよ..."
 
       paragraphs = parseHTML(body, "p")
 
@@ -75,7 +75,7 @@ findBestParagraph = (paragraphs) ->
     text
 
 makeArticleURL = (title) ->
-  "https://en.wikipedia.org/wiki/#{encodeURIComponent(title)}"
+  "https://ja.wikipedia.org/wiki/#{encodeURIComponent(title)}"
 
 makeTitleFromQuery = (query) ->
   strCapitalize(_s.trim(query).replace(/[ ]/g, '_'))
