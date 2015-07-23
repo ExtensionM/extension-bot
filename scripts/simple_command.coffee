@@ -16,7 +16,7 @@ module.exports = (robot) ->
 			"進捗は?"
 		]
 	
-	robot.hear /@extension-bot/i , (msg) ->
+	robot.hear /@extension-bot/ , (msg) ->
 		msg.send msg.random [
 			"進捗は?"
 		]
