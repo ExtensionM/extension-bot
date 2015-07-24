@@ -14,9 +14,22 @@ random_image = [
 	"https://pbs.twimg.com/media/BspWlZFCMAA4fmV.jpg:large",
 	"https://pbs.twimg.com/media/BswuMrPCEAEECXg.jpg:large",
 	"https://pbs.twimg.com/media/BtcSOp6CcAA9_b4.jpg:large",
-	"https://pbs.twimg.com/media/BtcSFKpCQAAb73x.jpg:large"
+	"https://pbs.twimg.com/media/BtcSFKpCQAAb73x.jpg:large",
+	"https://pbs.twimg.com/media/BspWoBQCcAAm9y5.jpg:large",
+	"https://pbs.twimg.com/media/BtcSM8BCYAE3_8j.jpg:large",
+	"https://pbs.twimg.com/media/BswuH1qCcAAueYw.jpg:large",
+	"https://pbs.twimg.com/media/BswuNkICcAE4olR.jpg:large",
+	"https://pbs.twimg.com/media/BswuJviCYAMCdGc.png:large",
+	"https://pbs.twimg.com/media/Bsw1StjCQAA9NQ1.jpg:large",
+	"https://pbs.twimg.com/media/BswuUTPCYAAVX5n.jpg:large",
+	"https://pbs.twimg.com/media/BtcSU0xCcAAmz_W.jpg:large",
+	"https://pbs.twimg.com/media/Bs7qd4uCAAAwalT.jpg:large",
+	"https://pbs.twimg.com/media/Bts7OpFCcAEkaO4.jpg:large",
+	"https://pbs.twimg.com/media/BtcSG05CMAEEyIG.jpg:large",
+	"https://pbs.twimg.com/media/BtcSDbWCQAADuhK.jpg:large",
+	"https://pbs.twimg.com/media/Bts7BNsCMAASKsP.jpg:large"
 ]
 
 module.exports = (robot) -> 
-	robot.hear /(頑張るぞい|がんばるぞい|zoi|がんばるぞい)/i,(res) ->
+	robot.hear /(ぞい|ゾイ|頑張るぞい|がんばるぞい|zoi|がんばるぞい)/i,(res) ->
 		res.send res.random random_image
