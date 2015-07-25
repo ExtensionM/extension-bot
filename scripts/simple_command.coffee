@@ -9,7 +9,7 @@
 #   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
 
 module.exports = (robot) ->
-	robot.respond /(?!(.*)?(wiki|adapter|animate|chat|echo|help|image|map|mustache|ping|pug|time|rules|trasnlate|ship))(.*)/i, (msg) ->
+	robot.respond /(?!(.*)?(夏休み|夏やすみ|wiki|adapter|animate|chat|echo|help|image|map|mustache|ping|pug|time|rules|trasnlate|ship))(.*)/i, (msg) ->
 		send = msg.match[0].replace(/(@extension-bot|extension-bot)/g,"")
 		msg.send "#{send} じゃねんじゃ 進捗だせ"
 		
