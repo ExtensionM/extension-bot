@@ -10,6 +10,6 @@
 
 module.exports = (robot) ->
 	robot.respond /(?!(.*)?(wiki|adapter|animate|chat|echo|help|image|map|mustache|ping|pug|time|rules|trasnlate|ship))(.*)/i, (msg) ->
-		send = msg.match[0].replace("@extension-bot","")
+		send = msg.match[0].replace(/(@extension-bot|extension-bot)/g,"")
 		msg.send "#{send} じゃねんじゃ 進捗だせ"
 		
