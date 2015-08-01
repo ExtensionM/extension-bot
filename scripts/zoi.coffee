@@ -1,3 +1,9 @@
+#description:
+# 今日も一日頑張るぞい!(頑張るとは言ってない)
+#Commands:
+# zoi - 今日も一日頑張れるかもしれない画像を送信します
+
+
 random_image = [
 	"https://pbs.twimg.com/media/BspWfqoCYAE836J.jpg:large",
 	"https://pbs.twimg.com/media/BspTawrCEAAwQnP.jpg:large",
