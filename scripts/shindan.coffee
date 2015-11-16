@@ -30,5 +30,5 @@ module.exports = (robot) ->
 
     request.post options, (error, response, body) ->
       $ = cheerio.load body
-      result = $("textarea").text().replace(/\n/g, "").replace(/\t/g, "")
+      result = $("textarea").text()
       msg.send(result)
