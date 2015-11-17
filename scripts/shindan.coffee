@@ -30,5 +30,8 @@ module.exports = (robot) ->
 
     request.post options, (error, response, body) ->
       $ = cheerio.load body
-      result = $("textarea").text()
+      if $("title").text().replace(/\s/,"") == "エラー"
+        result = "そんな診断ないよ"
+      else
+        result = $("textarea").text()
       msg.send(result)
